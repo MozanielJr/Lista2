@@ -55,6 +55,7 @@ int main() {
 // CADASTRAR PROFESSOR(1)
 // CADASTRAR DISCIPLINA(2)
 // CADASTRAR ALUNO(3)
+// RELATORIOS (4)
 // SAIR(0)
 // ----------------------------------------
 
@@ -95,7 +96,25 @@ int main() {
 // CONTINUAR (S-SIM N-NAO):
 // ----------------------------------------
 
+// ------------------SISCAMAIS------------
+// CADASTRAR PROFESSOR(1)
+// CADASTRAR DISCIPLINA(2)
+// CADASTRAR ALUNO(3)
+// RELATORIOS (4)
+// SAIR(0)
+// ----------------------------------------
 
+
+/*
+
+
+Apresente um relatório dos alunos matriculados na primeira disciplina ordenados por idade.
+codigo_disciplina   nome_professor  nome_estudante  idade_estudante
+
+Apresente um relatório dos alunos matriculados na segunda disciplina ordenados por idade em ordem decrescente.
+codigo_disciplina   nome_professor  nome_estudante  idade_estudante
+
+*/
 
 
 
