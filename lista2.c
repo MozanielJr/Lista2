@@ -18,11 +18,89 @@ Utilize o bubble sort para ordenação utilizano um procedimento com passagem de
 Idade do estudante deverá estar validada entre 16 e 26 por meio de uma função le_valida_idade.
 
 */
-
 #include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
 
-int main(){
+struct Professor {
+    char nome[100];
+    char matricula[10];
+    int titulacao;
+};
 
+struct Disciplina {
+    char nome[100];
+    char matricula[10];
+    int carga_horaria;
+    int qtde_alunos;
+    struct Professor professor;
+};
 
+struct Estudante {
+    char nome[100];
+    char matricula[10];
+    int idade;
+    struct Disciplina disciplina;
+};
+
+int main() {
     return 0;
 }
+
+
+
+// /*
+
+// ------------------SISCAMAIS------------
+// CADASTRAR PROFESSOR(1)
+// CADASTRAR DISCIPLINA(2)
+// CADASTRAR ALUNO(3)
+// SAIR(0)
+// ----------------------------------------
+
+
+
+// ------------------SISCAMAIS------------
+// CADASTRAR PROFESSOR
+
+// NOME:
+// MATRICULA:
+// TITULAÇAO (1- ESPECIALSITA 2-MESTRE 3-DOUTOR):
+// CONTINUAR (S-SIM N-NAO):
+// ----------------------------------------
+
+// ------------------SISCAMAIS------------
+// CADASTRAR DISCIPLINA
+
+// NOME:
+// CODIGO:
+// CARGA HORARIO: 
+// ESCOLHA O PROFESSOR RESPONSAVEL ABAIXO:
+// (1) XXXXXXXXX 
+// (2) XXXXXXXXX
+// (3) XXXXXXXXX
+// CONTINUAR (S-SIM N-NAO):
+// ----------------------------------------
+
+
+// ------------------SISCAMAIS------------
+// CADASTRAR ALUNO
+
+// NOME:
+// MATRICULA:
+// IDADE:
+// ESCOLHA A DISCIPLINA ABAIXO:
+// (1) XXXXXXXXX 
+// (2) XXXXXXXXX
+// CONTINUAR (S-SIM N-NAO):
+// ----------------------------------------
+
+
+
+
+
+
+
+
+
+//  * /
