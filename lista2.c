@@ -18,3 +18,11 @@ Utilize o bubble sort para ordenação utilizano um procedimento com passagem de
 Idade do estudante deverá estar validada entre 16 e 26 por meio de uma função le_valida_idade.
 
 */
+
+#include <stdio.h>
+
+int main(){
+
+
+    return 0;
+}
