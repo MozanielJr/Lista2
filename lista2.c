@@ -33,21 +33,40 @@ struct Disciplina {
     char matricula[10];
     int carga_horaria;
     int qtde_alunos;
-    struct Professor professor;
+    struct Professor professor[2];
 };
 
 struct Estudante {
     char nome[100];
     char matricula[10];
     int idade;
-    struct Disciplina disciplina;
+    struct Disciplina disciplina[1];
 };
 
+char saida();
+
 int main() {
+
+struct Estudante estudante[14];
+
+// do{
+// menu_inicial();
+// continuar = saida()
+// }while (continuar=='S'||continuar=='s');
+
+
+
     return 0;
 }
 
+char saida(){
+        char continuar;
+        printf("|      Deseja continuar? (S/N): ");
+        scanf(" %c",&continuar);
+        printf("+-----------------------------------+\n");
+    return continuar;
 
+}
 
 // /*
 
