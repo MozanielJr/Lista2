@@ -52,7 +52,7 @@ void le_valida_idade(int* idade) {
         if (idade < 16 || idade > 26){
             printf("Idade inválida!\n");      
         }
-    } while (*idade < 16 || *idade > 26);
+    } while (*idade < 16 && *idade > 26);
 }
 
 void bubble_sort(struct Estudante* estudantes, int num_estudantes) {
