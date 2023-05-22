@@ -91,10 +91,10 @@ int main() {
 
     // Cadastro de estudantes
     for (i = 0; i < 15; i++) {
-        printf("Digite o nome do aluno: ");
+        printf("Digite o nome do aluno %d: ", i+1);
         scanf(" %[^\n]s", estudantes[i].nome);
 
-        printf("Digite a matricula do aluno: ");
+        printf("Digite a matricula do aluno %d: ", i+1);
         scanf(" %[^\n]s", estudantes[i].matricula);
 
         le_valida_idade(&estudantes[i].idade);
@@ -111,10 +111,13 @@ int main() {
             disciplinas[1].num_estudantes++;
         } else {
             printf("\nDisciplina cheia ou inválida! O aluno não foi matriculado.\n");
+            getchar();
             continue;
         }
 
         num_estudantes++;
+        
+        system("cls");
     }
 
     // Relatório dos alunos matriculados na primeira disciplina ordenados por idade
