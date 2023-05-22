@@ -1,0 +1,29 @@
+Antes de editar verifique que esta editando a sua Branch, suas bestas!!!
+
+Vamos definir o que fazer:
+
+
+As structs foram definidas por mim e pelo Lucas, pensamos no que seria necessário armazenar e listar nos 2 relatórios.
+
+
+Vamos definir as funções e procedimentos que cada um fará:
+
+
+Precisamos das seguintes funções:
+
+1 - Cadastrar_Professor;
+
+2 - Cadastrar_Disciplina  (Atentar que não pode ultrapassar 10 alunos por disciplina);
+
+2 - Cadastrar_Estudante;
+
+3 - le_valida_idade (Idade do estudante deverá estar validada entre 16 e 26).
+
+
+
+Procedimentos:
+
+1 - Relatorio_Ordenado_Idade_Crescente  (Relatório dos alunos matriculados na primeira disciplina ordenados por idade) - Utilizar bubble sort ;
+
+2 - Relatorio_Ordenado_Idade_Decrescente  (Relatório dos alunos matriculados na primeira disciplina ordenados por idade em ordem decrescente) - Utilizar bubble sort;
+
