@@ -47,8 +47,11 @@ struct Estudante {
 
 void le_valida_idade(int* idade) {
     do {
-        printf("Digite a idade do aluno: ");
+        printf("Digite a idade do aluno entre 16 a 26 anos: ");
         scanf("%d", idade);
+        if (idade < 16 || idade > 26){
+            printf("Idade inválida!\n");      
+        }
     } while (*idade < 16 || *idade > 26);
 }
 
@@ -87,12 +90,12 @@ int main() {
     struct Estudante estudantes[15];
 
     // Cadastro de estudantes
-    for (i = 0; i < 5; i++) {
+    for (i = 0; i < 15; i++) {
         printf("Digite o nome do aluno: ");
-        scanf("%s", estudantes[i].nome);
+        scanf(" %[^\n]s", estudantes[i].nome);
 
-        printf("\nDigite a matricula do aluno: ");
-        scanf("%s", estudantes[i].matricula);
+        printf("Digite a matricula do aluno: ");
+        scanf(" %[^\n]s", estudantes[i].matricula);
 
         le_valida_idade(&estudantes[i].idade);
 
@@ -107,7 +110,7 @@ int main() {
             disciplinas[1].estudantes[disciplinas[1].num_estudantes] = i;
             disciplinas[1].num_estudantes++;
         } else {
-            printf("Disciplina cheia ou inválida! O aluno não foi matriculado.\n");
+            printf("\nDisciplina cheia ou inválida! O aluno não foi matriculado.\n");
             continue;
         }
 
@@ -115,25 +118,25 @@ int main() {
     }
 
     // Relatório dos alunos matriculados na primeira disciplina ordenados por idade
-    printf("Relatório dos alunos matriculados na primeira disciplina ordenados por idade:\n");
-    printf("codigo_disciplina  nome_professor nome_estudante idade_estudante\n");
+    printf("Relatório dos alunos matriculados na primeira disciplina ordenados por idade:\n\n");
+    printf("codigo_disciplina\tnome_professor\tnome_estudante\tidade_estudante\n");
 
     bubble_sort(estudantes, disciplinas[0].num_estudantes);
 
     for (i = 0; i < disciplinas[0].num_estudantes; i++) {
-        printf("%-17d%-15s%-15s%d\n", disciplinas[0].codigo,
+        printf("%-17d\t%-15s\t%-15s\t%d\n", disciplinas[0].codigo,
                disciplinas[0].professor_responsavel.nome,
                estudantes[disciplinas[0].estudantes[i]].nome,
                estudantes[disciplinas[0].estudantes[i]].idade);
     }
 
     // Relatório dos alunos matriculados na segunda disciplina ordenados por idade em ordem decrescente
-    printf("\nRelatório dos alunos matriculados na segunda disciplina ordenados por idade em ordem decrescente:\n");
-    printf("codigo_disciplina  nome_professor nome_estudante idade_estudante\n");
+    printf("\nRelatório dos alunos matriculados na segunda disciplina ordenados por idade em ordem decrescente:\n\n");
+    printf("codigo_disciplina\tnome_professor\tnome_estudante\tidade_estudante\n");
 
     bubble_sort(estudantes, disciplinas[1].num_estudantes);
     for (i = disciplinas[1].num_estudantes - 1; i >= 0; i--) {
-        printf("%-17d%-15s%-15s%d\n", disciplinas[1].codigo,
+        printf("%-17d\t%-15s\t%-15s\t%d\n", disciplinas[1].codigo,
                disciplinas[1].professor_responsavel.nome,
                estudantes[disciplinas[1].estudantes[i]].nome,
                estudantes[disciplinas[1].estudantes[i]].idade);
