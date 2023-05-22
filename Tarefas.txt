@@ -17,13 +17,18 @@ Precisamos das seguintes funções:
 
 2 - Cadastrar_Estudante;
 
-3 - le_valida_idade (Idade do estudante deverá estar validada entre 16 e 26).
+3 - le_valida_idade (Idade do estudante deverá estar validada entre 16 e 26);
 
 
 
-Procedimentos:
 
-1 - Relatorio_Ordenado_Idade_Crescente  (Relatório dos alunos matriculados na primeira disciplina ordenados por idade) - Utilizar bubble sort ;
+Procedimentos: 
 
-2 - Relatorio_Ordenado_Idade_Decrescente  (Relatório dos alunos matriculados na primeira disciplina ordenados por idade em ordem decrescente) - Utilizar bubble sort;
+1 - Ordenar_Idade_Crescente - Utilizar bubble sort;
+
+2 - Ordenar_Idade_Decrescente - Utilizar bubble sort;
+
+1 - Relatorio_1 (relatório dos alunos matriculados na primeira disciplina ordenados por idade);
+
+2 - Relatorio_2  (relatório dos alunos matriculados na segunda disciplina ordenados por idade em ordem decrescente);
 
