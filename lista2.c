@@ -1,4 +1,7 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include<locale.h>
+
 
 struct Professor {
     char nome[50];
@@ -43,6 +46,9 @@ void bubble_sort(struct Estudante* estudantes, int num_estudantes) {
 }
 
 int main() {
+
+    setlocale(LC_ALL, "Portuguese");
+
     int i;
     int num_estudantes = 0;
 
@@ -53,8 +59,8 @@ int main() {
     };
 
     struct Disciplina disciplinas[2] = {
-        {"Disciplina1", 1, 60, professores[0], {0}, 0}, // Inicializando o campo de estudantes e num_estudantes
-        {"Disciplina2", 2, 80, professores[1], {0}, 0} // Inicializando o campo de estudantes e num_estudantes
+        {"Disciplina - 1", 1, 60, professores[0], {0}, 0}, // Inicializando o campo de estudantes e num_estudantes
+        {"Disciplina - 2", 2, 80, professores[1], {0}, 0} // Inicializando o campo de estudantes e num_estudantes
     };
 
     struct Estudante estudantes[15];
