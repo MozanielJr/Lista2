@@ -33,21 +33,21 @@ struct Disciplina {
     char matricula[10];
     int carga_horaria;
     int qtde_alunos;
-    struct Professor professor[2];
+    struct Professor professor[3];
 };
 
 struct Estudante {
     char nome[100];
     char matricula[10];
     int idade;
-    struct Disciplina disciplina[1];
+    struct Disciplina disciplina[2];
 };
 
 char saida();
 
 int main() {
 
-struct Estudante estudante[14];
+struct Estudante estudante[15];
 
 // do{
 // menu_inicial();
