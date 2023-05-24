@@ -50,7 +50,7 @@ void le_valida_idade(int* idade) {
         printf("Digite a idade do aluno entre 16 a 26 anos: ");
         scanf("%d", idade);
         if (*idade < 16 || *idade > 26){
-            printf("Idade inválida!\n");      
+            printf("Idade invalida!\n");      
         }
     } while (*idade < 16 || *idade > 26);
 }
@@ -110,7 +110,7 @@ int main() {
             disciplinas[1].estudantes[disciplinas[1].num_estudantes] = i;
             disciplinas[1].num_estudantes++;
         } else {
-            printf("\nDisciplina cheia ou inválida! O aluno não foi matriculado.\n");
+            printf("\nDisciplina cheia ou invalida! O aluno nao foi matriculado.\n");
             getchar();
             continue;
         }
@@ -121,7 +121,7 @@ int main() {
     }
 
     // Relatório dos alunos matriculados na primeira disciplina ordenados por idade
-    printf("Relatório dos alunos matriculados na primeira disciplina ordenados por idade:\n\n");
+    printf("Relatorio dos alunos matriculados na primeira disciplina ordenados por idade:\n\n");
     printf("codigo_disciplina\tnome_professor\tnome_estudante\tidade_estudante\n");
 
     bubble_sort(estudantes, disciplinas[0].num_estudantes);
@@ -134,7 +134,7 @@ int main() {
     }
 
     // Relatório dos alunos matriculados na segunda disciplina ordenados por idade em ordem decrescente
-    printf("\nRelatório dos alunos matriculados na segunda disciplina ordenados por idade em ordem decrescente:\n\n");
+    printf("\nRelatorio dos alunos matriculados na segunda disciplina ordenados por idade em ordem decrescente:\n\n");
     printf("codigo_disciplina\tnome_professor\tnome_estudante\tidade_estudante\n");
 
     bubble_sort(estudantes, disciplinas[1].num_estudantes);
